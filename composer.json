@@ -1,0 +1,25 @@
+{
+  "name": "srun/yii2-alipay",
+  "description": "yii2-alipay支付宝扩展",
+  "type": "library",
+  "keywords": [
+    "yii2",
+    "extension"
+  ],
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "*"
+  },
+  "authors": [
+    {
+      "name": "wjw",
+      "email": "326447527@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "srun\\alipay\\": "/src"
+    }
+  }
+}
