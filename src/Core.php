@@ -147,7 +147,7 @@ class Core
      * @param $time_out      超时时间。默认值：60
      *                       return 远程输出的数据
      */
-    /*public function getHttpResponse($url, $input_charset = '', $time_out = "60") {
+    public function getHttpResponse($url, $input_charset = '', $time_out = "60") {
         //因SAE 不支持fsockopen + ssl 使用CURL改写
         $ch = curl_init();
         curl_setopt ($ch, CURLOPT_URL, $url);
@@ -157,7 +157,7 @@ class Core
         curl_close($ch);
         return $responseText;
     }
-
+    /*
     public function getHttpResponse($url, $post = null) {
         $context = array ();
 
@@ -173,7 +173,7 @@ class Core
         return file_get_contents ( $url, false, stream_context_create ( $context ) );
     }*/
 
-    public function getHttpResponse($url, $input_charset = '', $time_out = "60")
+    /*public function getHttpResponse($url, $input_charset = '', $time_out = "60")
     {
         $urlarr = parse_url($url);
         $errno = "";
@@ -209,7 +209,7 @@ class Core
 
             return $responseText;
         }
-    }
+    }*/
 
     /**
      * 实现多种字符编码方式
